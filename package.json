@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-flexslider",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Flexslider component for ember.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/AO16/ember-cli-flexslider.git",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -41,7 +41,10 @@
     "loader.js": "^4.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember",
+    "flexslider",
+    "slider"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
