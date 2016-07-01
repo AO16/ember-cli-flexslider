@@ -3,10 +3,6 @@ var funnel = require('broccoli-funnel');
 module.exports = {
   name: 'ember-cli-flexslider',
 
-  isDevelopingAddon: function() {
-    return true;
-  },
-
   included: function(app) {
     this._super.included(app);
 

@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-flexslider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Flexslider component for ember.",
   "directories": {
     "doc": "doc",
