@@ -6,6 +6,7 @@ export default Ember.Component.extend({
 
   layout,
   slides: null,
+  end: false,
 
   init() {
     this._super(...arguments);
@@ -13,7 +14,11 @@ export default Ember.Component.extend({
   },
 
   setupFlexbox() {
-    const options = this.getProperties('animation', 'animationLoop');
+    const options = this.getProperties('animation', 'animationLoop', 'prevText', 'nextText', 'slideshow');
+
+    options.start = ({ currentSlide, count }) => this.set('end', (currentSlide === (count - 1)));
+    options.before = ({ animatingTo, count }) => this.set('end', (animatingTo === (count - 1)));
+
     this.$().flexslider(options);
   },
 
